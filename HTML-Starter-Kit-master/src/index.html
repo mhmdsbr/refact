@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-XXXXXX-X');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Starter Kit</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="MarkItAsDone">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="MarkItAsDone">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=1.0.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=1.0.0">
+  <link rel="manifest" href="site.webmanifest?v=1.0.0">
+  <link rel="mask-icon" href="safari-pinned-tab.svg?v=1.0.0" color="#3c3ce5">
+  <link rel="shortcut icon" href="favicon.ico?v=1.0.0">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="mstile-150x150.png">
+  <meta name="msapplication-TileColor" content="#3c3ce5">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- build:css styles/vendor.min.css -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.min.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <header class="header o-section">
+    <div class="o-section__wrapper">
+      <div class="header__navbar row u-flex--center">
+        <a class="header__navbar-logo col-2" href="#">
+          <img src="./assets/logo.svg" alt="" class="header__logo" />
+        </a>
+        <nav class="header__navbar-container col-10 u-flex u-flex--end">
+          <ul class="header__navbar-nav">
+            <li class="header__nav-item active">
+              <a class="nav-link" href="#">Why Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="nav-link" href="#">Popular Dishes</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="nav-link" href="#">Book</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article class="hero">
+      <div class="hero__background">
+        <img src="./assets/background-picture.jpg" srcset="" alt="" title="" loading="lazy" />
+      </div>
+      <div class="hero__content row u-flex--center">
+        <div class="col-4 u-flex--column">
+          <h1 class="hero__title">Book a table in the best Mexican restaurant</h1>
+          <p class="hero__paragraph">30% off for Christmas</p>
+          <div class="hero__buttons u-flex--center">
+            <a class="btn btn--primary">Book Now</a>
+            <a class="btn btn--secondary">See Menu</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="why-us o-section">
+      <div class="o-section__wrapper bg-primary">
+        <div class="row u-flex--center">
+          <div class="col-6">
+            <div class="why-us__content">
+              <h2 class="why-us__title">Why Customers Like us?</h2>
+              <p class="why-us__paragraph">When we first opened our restaurant, it didn't take a long time ofr us to prove our difference.</p>
+              <p class="why-us__paragraph">Our native chefs, the Chinese atmosphere of the restaurant, the variety of dishes, the high quality of foods, and affordable prices made us well-known very soon.</p>
+              <p class="why-us__paragraph">Today, we have customers not only from this area but also from other cities.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="why-us__image">
+              <img src="./assets/why-us.jpg" srcset="" alt="" title="" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="menu o-section">
+      <div class="o-section__wrapper bg-primary">
+        <div class="row u-flex--center">
+          <div class="col-12">
+            <div class="menu__container">
+              <div class="menu__header">
+                <h3 class="menu__title">Our Menu</h3>
+                <ul>
+                  <li>Starter</li>
+                  <li>Main Dishes</li>
+                  <li>Desserts</li>
+                </ul>
+              </div>
+              <div class="menu__content">
+                <h4>Dim Sums</h4>
+                <p>Chestnuts, mushroom, spring onion, ginger, coriander</p>
+                <p>35$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer>
+
+  </footer>
+
+  <!-- build:js scripts/vendor.min.js -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.min.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>

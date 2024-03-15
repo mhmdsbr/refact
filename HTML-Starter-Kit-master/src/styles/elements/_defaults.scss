@@ -1,0 +1,39 @@
+/* Generate font-size classes for lg down and lg up
+** This can be altered by adding on to or removing items from the $text-sizes variable
+========================================================================== */
+@each $name, $size in $text-sizes {
+  .text-#{$name} {
+    font-size: $size;
+  }
+
+}
+
+/* Generate css variables.
+** All colors added in the $exp-colors array will be generated as: --color-name: #000000;
+========================================================================== */
+body {
+  @each $name, $hex in $colors {
+    --color-#{$name}: #{$hex};
+  }
+}
+
+body,
+html {
+  font-family: $lato;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--color-white);
+  background: var(--color-black);
+
+  --background-primary: var(--color-black-1);
+
+}
+
+.bg-primary {
+  background-color: var(--background-primary);
+  border: 1px solid var(--color-grey-1);
+}
+

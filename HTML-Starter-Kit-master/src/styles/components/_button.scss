@@ -1,0 +1,14 @@
+.btn {
+  text-align: center;
+  font-size: map-get($text-sizes, sm);
+  padding: 8px 32px;
+
+  &--primary {
+    background-color: var(--color-grey);
+  }
+
+  &--secondary {
+    background-color: var(--color-orange);
+  }
+
+}
