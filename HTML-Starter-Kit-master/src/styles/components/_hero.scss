@@ -3,7 +3,7 @@
   height: 100vh;
   min-height: 500px;
 
-  @include mq(lg) {
+  @include mq(sm) {
     min-height: 800px;
   }
 
@@ -12,7 +12,7 @@
     inset: 0;
     transform: translateY(30%);
 
-    @include mq(lg) {
+    @include mq(sm) {
       transform: translateY(40%);
     }
   }
@@ -36,6 +36,7 @@
   &__buttons {
     display: flex;
     gap: 32px;
+    font-size: map-get($text-sizes, xl);
   }
 
   &__background {
