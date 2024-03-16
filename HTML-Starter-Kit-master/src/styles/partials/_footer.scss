@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--color-grey-2);
+
+  &--border {
+    border-top: 1px solid var(--color-grey-6);
+    padding-top: 32px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

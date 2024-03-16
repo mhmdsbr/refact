@@ -1,0 +1,55 @@
+.contact {
+  position: relative;
+
+  &__content {
+    margin-left: 64px;
+  }
+
+  &__title {
+    margin-left: 64px;
+    font-size: map-get($text-sizes, 4xl);
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 1px solid var(--color-orange);
+      width: 20px;
+    }
+  }
+
+  &__contact-items {
+    margin-bottom: 32px;
+  }
+
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0;
+  }
+
+  &__map {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__hours {
+    text-align: center;
+    margin-top: 32px;
+    h5 {
+      text-transform: uppercase;
+      font-size: map-get($text-sizes, lg);
+      color: var(--color-orange);
+      margin-bottom: 0;
+    }
+    p {
+      font-size: map-get($text-sizes, xl);
+    }
+  }
+
+}
+
