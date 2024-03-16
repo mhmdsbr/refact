@@ -20,14 +20,11 @@
       totalSlidesSpan.classList.add('total-slides');
 
       carouselStatus.innerHTML = '';
-
       carouselStatus.appendChild(slideNumberSpan);
       carouselStatus.appendChild(document.createTextNode('/'));
       carouselStatus.appendChild(totalSlidesSpan);
     }
-
     updateStatus();
-
     flickity.on('select', updateStatus);
     // End
 
@@ -42,12 +39,6 @@
       numberInput.stepDown();
     });
     // End
-
-    const dateInput = document.getElementById('date');
-
-    // Get the div for displaying formatted date
-    const formattedDateDiv = document.getElementById('formattedDate');
-
 
   });
 })();

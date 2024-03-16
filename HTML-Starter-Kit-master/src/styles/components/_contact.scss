@@ -6,15 +6,8 @@
   }
 
   &__title {
+    @extend %section-title;
     margin-left: 64px;
-    font-size: map-get($text-sizes, 4xl);
-
-    &::after {
-      content: '';
-      display: block;
-      border-bottom: 1px solid var(--color-orange);
-      width: 20px;
-    }
   }
 
   &__contact-items {

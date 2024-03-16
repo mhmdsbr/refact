@@ -17,17 +17,9 @@
   }
 
   &__title {
-    font-size: map-get($text-sizes, 4xl);
+    @extend %section-title;
     margin: 32px 0;
     flex: 10;
-
-    &::after {
-      content: '';
-      display: block;
-      border-bottom: 1px solid var(--color-orange);
-      width: 20px;
-    }
-
   }
 
   &__pagination {
