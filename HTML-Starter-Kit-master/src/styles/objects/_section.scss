@@ -8,7 +8,18 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1em;
-  @include mq(lg) {
+
+  @include mq(wide) {
     max-width: calc(1164px - 2em);
   }
+  @include mq(lg, wide) {
+    max-width: calc(920px - 2em);
+  }
+  @include mq(md, lg) {
+    max-width: calc(700px - 2em);
+  }
+  @include mq(sm, md) {
+    max-width: calc(500px - 2em);
+  }
+
 }

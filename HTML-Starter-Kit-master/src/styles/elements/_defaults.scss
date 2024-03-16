@@ -19,7 +19,7 @@ body {
 
 body,
 html {
-  font-family: $lato;
+  font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31,6 +31,19 @@ body {
   --background-primary: var(--color-black-1);
 
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
 
 .bg-primary {
   background-color: var(--background-primary);
