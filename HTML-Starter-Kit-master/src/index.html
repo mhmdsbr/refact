@@ -217,6 +217,65 @@
         </div>
       </div>
     </article>
+    <article class="booking o-section">
+      <div class="o-section__wrapper">
+        <div class="booking__background">
+          <img src="./assets/booking.jpg" srcset="" alt="" title="" loading="lazy" />
+        </div>
+        <div class="booking__container row u-flex--center">
+            <div class="col-7">
+              <div class="booking__content">
+                <h2 class="booking__title">Book a Table</h2>
+                <p class="booking__paragraph">When we first opened our restaurant, it didn't take a long time for us to prove our difference. </p>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="booking__form-container bg-primary">
+                <form class="booking__form u-flex u-flex--column">
+                  <div class="booking__form-input-wrapper">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" class="booking__form-input" required>
+                  </div>
+                  <div class="booking__form-input-wrapper">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" class="booking__form-input" required>
+                  </div>
+                  <div class="booking__form-input-wrapper">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="booking__form-input" required>
+                  </div>
+                  <div class="booking__form-input-wrapper">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" placeholder="Month, Day, Year" class="booking__form-input" required>
+                  </div>
+                  <div class="booking__form-input-wrapper">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" class="booking__form-input" required>
+                  </div>
+                  <div class="booking__form-input-wrapper">
+                    <label for="number">Number of People:</label>
+                    <div class="booking__input-number-wrapper">
+                      <span class="input-number-plus">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.93585 6.41509H15.0642V9.0566H8.93585V16H6.1283V9.0566H0V6.41509H6.1283V0H8.93585V6.41509Z" fill="#909090"/>
+                        </svg>
+                      </span>
+                      <input type="number" id="number" name="number" class="booking__form-input js-form-number-input" required>
+                      <span class="input-number-minus">
+                        <svg width="13" height="2" viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.4238 1.80838H0.423828V0H12.4238V1.80838Z" fill="#909090"/>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="btn btn--secondary booking__form-btn" type="submit">Book Now</button>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </article>
   </main>
   <footer>
 
