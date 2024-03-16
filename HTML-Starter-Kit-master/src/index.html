@@ -64,12 +64,24 @@
           <img src="./assets/logo.svg" alt="" class="header__logo" />
         </a>
         <nav class="header__navbar-container p-0 col-lg-10 col-md-9 col-8">
-          <div class="header__navbar-hamburger-icon">
+          <div class="header__navbar-hamburger-icon js-header-hamburger">
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M34 28.3337H0V24.5559H34V28.3337ZM34 18.8892H0V15.1114H34V18.8892ZM34 5.66699V9.44477H0V5.66699H34Z" fill="white"/>
             </svg>
           </div>
           <ul class="header__navbar-nav">
+            <li class="header__nav--close-icon js-close-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_72_608)">
+                <path d="M24 1.41269L22.6087 0.0244141L12 10.6128L1.39129 0.0244141L0 1.41269L10.6087 12.0012L0 22.5889L1.39129 23.9771L12 13.3894L22.6087 23.9771L24 22.5889L13.3905 12.0012L24 1.41269Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_72_608">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </li>
             <li class="header__nav-item active">
               <a class="nav-link" href="#">Why Us</a>
             </li>
@@ -96,7 +108,7 @@
         <img src="./assets/background-picture.jpg" srcset="" alt="" title="" loading="lazy" />
       </div>
       <div class="c-hero__content row u-flex--center">
-        <div class="col-4 u-flex--column">
+        <div class="col-lg-4 col-md-8 col-12 u-flex--column">
           <h1 class="c-hero__title">Book a table in the best Mexican restaurant</h1>
           <p class="c-hero__paragraph">30% off for Christmas</p>
           <div class="c-hero__buttons u-flex--center">

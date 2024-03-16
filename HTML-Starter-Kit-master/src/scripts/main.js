@@ -40,5 +40,20 @@
     });
     // End
 
+    // Mobile Nav
+    const hamburgerIcon = document.querySelector('.js-header-hamburger');
+    const navMenu = document.querySelector('.header__navbar-nav');
+    const closeMenuBtn = document.querySelector('.js-close-icon');
+
+    hamburgerIcon.addEventListener('click', function() {
+      document.body.style.overflow = 'hidden';
+      navMenu.classList.toggle('show-menu');
+    });
+
+    closeMenuBtn.addEventListener('click', function() {
+      document.body.style.overflow = '';
+      navMenu.classList.remove('show-menu');
+    });
+
   });
 })();

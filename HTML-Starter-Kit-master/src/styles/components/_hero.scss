@@ -1,18 +1,30 @@
 .c-hero {
   position: relative;
   height: 100vh;
-  min-height: 800px;
+  min-height: 500px;
+
+  @include mq(lg) {
+    min-height: 800px;
+  }
 
   &__content {
     position: absolute;
     inset: 0;
-    transform: translateY(40%);
+    transform: translateY(30%);
+
+    @include mq(lg) {
+      transform: translateY(40%);
+    }
   }
 
   &__title {
     text-align: center;
-    font-size: map-get($text-sizes, 5xl);
+    font-size: map-get($text-sizes, 4xl);
     margin-bottom: 0;
+
+    @include mq(lg) {
+      font-size: map-get($text-sizes, 5xl);
+    }
   }
 
   &__paragraph {

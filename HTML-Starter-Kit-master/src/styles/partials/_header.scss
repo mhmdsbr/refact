@@ -1,4 +1,6 @@
 .header {
+  $block: &;
+
   position: absolute;
   width: 100%;
   top: 0;
@@ -25,18 +27,40 @@
   }
 
   &__navbar-nav {
-    justify-content: flex-end;
-    gap: 32px;
+    position: relative;
+    justify-content: center;
+    gap: 48px;
     list-style: none;
-    padding: 0;
+    padding: 64px;
     display: none;
 
     @include mq(md) {
       display: flex;
+      justify-content: flex-end;
     }
 
     @include mq(md, lg) {
       justify-content: space-around;
+    }
+
+    &.show-menu {
+      display: flex;
+      flex-direction: column;
+      inset: 0;
+      position: fixed;
+      margin: 0;
+      background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.85) 100%);
+    }
+
+    #{$block}__nav--close-icon {
+      cursor: pointer;
+      position: absolute;
+      top: 32px;
+      right: 32px;
+
+      @include mq(md) {
+        display: none;
+      }
     }
   }
 
@@ -49,13 +73,21 @@
   &__nav-item {
 
     &.active {
-      border-bottom: 1px solid var(--color-orange);
-      padding-bottom: 5px;
+      border: none;
+      @include mq(md) {
+        border-bottom: 1px solid var(--color-orange);
+        padding-bottom: 5px;
+      }
+
+    }
+
+    @include mq(md) {
+      width: auto;
     }
 
     .nav-link {
       color: var(--color-white);
-      font-size: map-get($text-sizes, sm);
+      font-size: map-get($text-sizes, lg);
       text-transform: uppercase;
       text-decoration: none;
     }
@@ -64,6 +96,7 @@
   &__navbar-hamburger-icon {
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
 
     @include mq(md) {
       display: none;
