@@ -1,18 +1,36 @@
 .c-menu {
 
   &__container {
-    padding: 32px 64px;
+    padding: 32px;
+
+    @include mq(lg) {
+      padding: 32px 64px;
+    }
   }
 
   &__header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @include mq(md) {
+      flex-direction: row;
+    }
+
 
     ul {
       list-style: none;
       display: flex;
       gap: 32px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+
+      @include mq(md) {
+        flex-direction: row;
+      }
 
       li {
         font-size: map-get($text-sizes, xl);
@@ -34,6 +52,12 @@
 
   }
   &__content {
+    margin-top: 48px;
+
+    @include mq(md) {
+      margin-top: 0;
+    }
+
     ul {
       padding: 0;
       list-style: none;
@@ -48,19 +72,34 @@
   &__content-title {
     display: block;
     font-size: map-get($text-sizes, xl);
+    text-align: center;
     margin: 8px 0;
+
+    @include mq(md) {
+      text-align: left;
+    }
   }
 
   &__content-ingredient {
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: space-between;
     font-size: map-get($text-sizes, lg);
+    text-align: center;
     color: var(--color-grey-2);
+
+    @include mq(md) {
+      flex-direction: row;
+      text-align: left;
+    }
   }
 
   &__content-price {
-
+    margin: 16px 0;
+    @include mq(md) {
+      margin: unset;
+    }
   }
 
 }

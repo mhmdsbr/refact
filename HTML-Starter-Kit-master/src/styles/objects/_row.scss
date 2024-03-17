@@ -2,6 +2,14 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+
+    &--mobile {
+      flex-direction: column;
+
+      @include mq(md) {
+        flex-direction: row;
+      }
+    }
 }
 
 .no-gutters {

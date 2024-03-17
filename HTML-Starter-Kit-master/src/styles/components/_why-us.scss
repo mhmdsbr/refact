@@ -1,31 +1,51 @@
 .c-why-us {
   &__content {
-    padding: 64px;
+    padding: 32px 16px 0;
+
+    @include mq(md) {
+      padding: 64px;
+    }
   }
 
   &__title {
     @extend %section-title;
-    margin-bottom: 0;
+    margin-bottom: 32px;
+
   }
 
   &__paragraph {
-    font-size: map-get($text-sizes, base);
+    font-size: map-get($text-sizes, 2xl);
     margin-bottom: 32px;
-  }
+    color: var(--color-grey-2);
 
+    @include mq(md) {
+      font-size: map-get($text-sizes, lg);
+    }
+  }
 
   &__image {
     position: relative;
-    top: 64px;
-    padding-right: 64px;
+    top: 32px;
+    padding-right: 0;
+
+    @include mq(md) {
+      padding-right: 64px;
+      top: 64px;
+    }
 
     img {
       display: block;
-      width: 100%;
+      width: 80%;
       height: 100%;
+      margin: auto;
       object-fit: cover;
       object-position: center center;
       pointer-events: none;
+
+      @include mq(md) {
+        width: 100%;
+        margin: unset;
+      }
     }
   }
 }

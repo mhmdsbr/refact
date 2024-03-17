@@ -1,7 +1,11 @@
 .c-popular-dishes {
 
   &__container {
-    padding: 32px 32px 32px 64px;
+    padding: 32px;
+
+    @include mq(lg) {
+      padding: 64px 64px 98px 64px;
+    }
 
     .carousel-cell {
       width: 100%;
@@ -11,15 +15,26 @@
 
   &__header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
+    @include mq(md) {
+      flex-direction: row;
+    }
   }
 
   &__title {
     @extend %section-title;
     margin: 32px 0;
     flex: 10;
+
+    @include mq(lg, wide) {
+      flex: 7;
+    }
+    @include mq(md, lg) {
+      flex: 5;
+    }
   }
 
   &__pagination {
@@ -42,58 +57,65 @@
       object-fit: cover;
       object-position: center center;
       pointer-events: none;
+      margin-top: 32px;
   }
 
   &__item-title {
     font-size: map-get($text-sizes, 3xl);
+    margin: 22px 0 16px 0;
+    text-align: center;
+
+    @include mq(md) {
+      text-align: left;
+    }
   }
 
   &__item-desc {
     font-size: map-get($text-sizes, xl);
     color: var(--color-grey-4);
     line-height: 1.5;
-    text-align: left;
-    width: 90%;
+    text-align: center;
+
+    @include mq(md) {
+      text-align: left;
+      width: 90%;
+    }
   }
 
   &__item-price {
     font-size: map-get($text-sizes, 3xl);
+    text-align: center;
+
+    @include mq(md) {
+      text-align: left;
+    }
   }
 
   .flickity-button {
-    top: 0;
-    transform: translateY(-170%);
-    background: transparent;
-
-    &::before {
-      content: url('data:image/svg+xml,<svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.2839 5.93606L23.4383 0.218059C23.1414 -0.0726864 22.665 -0.0726864 22.3681 0.218059C22.0712 0.508805 22.0712 0.975209 22.3681 1.26596L26.9209 5.72406H1.01452C0.593885 5.72406 0.253662 6.0572 0.253662 6.46909C0.253662 6.88098 0.593885 7.21413 1.01452 7.21413H26.9209L22.3681 11.6601C22.0712 11.9509 22.0712 12.4173 22.3681 12.708C22.5166 12.8534 22.7083 12.9261 22.9063 12.9261C23.1042 12.9261 23.296 12.8534 23.4445 12.708L29.2901 6.98395C29.5808 6.69927 29.5808 6.2268 29.2839 5.93606Z" fill="%23FFFCFC"/></svg>');
-      display: block;
-      width: 32px;
-    }
-
-    .flickity-button-icon {
-      display: none;
-    }
-
-    &.previous {
-      left: auto;
-      right: 116px;
-
-      &::before {
-        transform: rotate(180deg);
-      }
-    }
-
-    &.next {
-      right: 0;
-    }
-
+    display: none;
   }
 
-  .flickity-page-dots {
-    counter-reset: a;
+  &__slide-nav {
+    display: flex;
+    gap: 22px;
+
+    button {
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
   }
 
+  &__slide-prev-button {
+      transform: rotate(180deg);
+  }
+
+  &__slide-next-button {
+    position: relative;
+    top: 6px;
+  }
 
 }
 

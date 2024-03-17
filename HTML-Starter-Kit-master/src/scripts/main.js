@@ -26,6 +26,19 @@
     }
     updateStatus();
     flickity.on('select', updateStatus);
+
+    const prevButton = document.querySelector('.c-popular-dishes__slide-prev-button');
+    const nextButton = document.querySelector('.c-popular-dishes__slide-next-button');
+
+    prevButton.addEventListener('click', function() {
+      event.preventDefault();
+      flickity.previous();
+    });
+
+    nextButton.addEventListener('click', function() {
+      event.preventDefault();
+      flickity.next();
+    });
     // End
 
     // Input Number
