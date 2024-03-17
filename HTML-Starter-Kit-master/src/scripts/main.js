@@ -81,30 +81,51 @@
       const email = document.getElementById('email').value.trim();
 
       if (name !== '' && email !== '') {
-        // Show success message
         messagesContainer.style.display = 'block';
         successMessage.style.display = 'flex';
         errorMessage.style.display = 'none';
       } else {
-        // Show error message
         messagesContainer.style.display = 'block';
         successMessage.style.display = 'none';
         errorMessage.style.display = 'flex';
       }
     });
-
-    // Close buttons event listeners
     successMessage.querySelector('a').addEventListener('click', function(event) {
       event.preventDefault();
       messagesContainer.style.display = 'none';
     });
-
     errorMessage.querySelector('a').addEventListener('click', function(event) {
       event.preventDefault();
       messagesContainer.style.display = 'none';
     });
     //end
 
+    // menu tabs
+    const menuItems = document.querySelectorAll('.c-menu__nav-item');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    menuItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const tabName = this.dataset.tab;
+        tabContents.forEach(tab => tab.classList.remove('active'));
+        document.getElementById(tabName).classList.add('active');
+        menuItems.forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+    //end
+
+    // main nav hover
+    const navItems = document.querySelectorAll('.header__nav-item');
+
+    navItems.forEach(item => {
+      item.addEventListener('mouseenter', function() {
+        navItems.forEach(item => item.classList.remove('active'));
+
+        this.classList.add('active');
+      });
+    });
+    //end
 
 
   });

@@ -145,15 +145,47 @@
               <div class="c-menu__header">
                 <h3 class="c-menu__title">Our Menu</h3>
                 <ul>
-                  <li class="c-menu__nav-item active">Starter</li>
-                  <li class="c-menu__nav-item">Main Dishes</li>
-                  <li class="c-menu__nav-item">Desserts</li>
+                  <li class="c-menu__nav-item active" data-tab="starter" >Starter</li>
+                  <li class="c-menu__nav-item" data-tab="main-dishes">Main Dishes</li>
+                  <li class="c-menu__nav-item" data-tab="desserts">Desserts</li>
                 </ul>
               </div>
               <div class="c-menu__content">
-                <ul>
+                <ul id="starter" class="tab-content active">
+                  <li>
+                    <h4 class="c-menu__content-title">Starter</h4>
+                    <p class="c-menu__content-ingredient">
+                      Chestnuts, mushroom, spring onion, ginger, coriander
+                      <span class="c-menu__content-price">35$</span>
+                    </p>
+                  </li>
                   <li>
                     <h4 class="c-menu__content-title">Dim Sums</h4>
+                    <p class="c-menu__content-ingredient">
+                      Chestnuts, mushroom, spring onion, ginger, coriander
+                      <span class="c-menu__content-price">35$</span>
+                    </p>
+                  </li>
+                </ul>
+                <ul id="main-dishes" class="tab-content">
+                  <li>
+                    <h4 class="c-menu__content-title">Main dishes</h4>
+                    <p class="c-menu__content-ingredient">
+                      Chestnuts, mushroom, spring onion, ginger, coriander
+                      <span class="c-menu__content-price">35$</span>
+                    </p>
+                  </li>
+                  <li>
+                    <h4 class="c-menu__content-title">Dim Sums</h4>
+                    <p class="c-menu__content-ingredient">
+                      Chestnuts, mushroom, spring onion, ginger, coriander
+                      <span class="c-menu__content-price">35$</span>
+                    </p>
+                  </li>
+                </ul>
+                <ul  id="desserts" class="tab-content">
+                  <li>
+                    <h4 class="c-menu__content-title">Desserts</h4>
                     <p class="c-menu__content-ingredient">
                       Chestnuts, mushroom, spring onion, ginger, coriander
                       <span class="c-menu__content-price">35$</span>
