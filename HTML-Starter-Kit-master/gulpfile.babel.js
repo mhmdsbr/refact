@@ -138,7 +138,7 @@ function scripts() {
 
 exports.scripts = scripts;
 
-// Scan your HTML for assets & optimize them
+// Scan your HTML for images & optimize them
 function html() {
   return ( src('src/**/*.html')
       .pipe(

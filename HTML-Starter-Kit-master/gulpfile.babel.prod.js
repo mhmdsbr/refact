@@ -106,7 +106,7 @@ gulp.task('scripts', () =>
     .pipe(gulp.dest('.tmp/scripts'))
 );
 
-// Scan your HTML for assets & optimize them
+// Scan your HTML for images & optimize them
 gulp.task('html', () => {
   return gulp.src('src/**/*.html')
     .pipe($.useref({
