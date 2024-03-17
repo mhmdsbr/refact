@@ -68,5 +68,44 @@
       navMenu.classList.remove('show-menu');
     });
 
+    // booking messages
+    const form = document.getElementById('bookingForm');
+    const messagesContainer = document.querySelector('.c-booking__messages');
+    const successMessage = messagesContainer.querySelector('.c-booking__success-message');
+    const errorMessage = messagesContainer.querySelector('.c-booking__error-message');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      if (name !== '' && email !== '') {
+        // Show success message
+        messagesContainer.style.display = 'block';
+        successMessage.style.display = 'flex';
+        errorMessage.style.display = 'none';
+      } else {
+        // Show error message
+        messagesContainer.style.display = 'block';
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'flex';
+      }
+    });
+
+    // Close buttons event listeners
+    successMessage.querySelector('a').addEventListener('click', function(event) {
+      event.preventDefault();
+      messagesContainer.style.display = 'none';
+    });
+
+    errorMessage.querySelector('a').addEventListener('click', function(event) {
+      event.preventDefault();
+      messagesContainer.style.display = 'none';
+    });
+    //end
+
+
+
   });
 })();
