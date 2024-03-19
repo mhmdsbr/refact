@@ -16,3 +16,33 @@
 .gap-1 {
   gap: 8px;
 }
+
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-lg-0 {
+  @include mq(lg) {
+    margin-bottom: 0;
+  }
+}
+.mb-md-0 {
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+}
+.mb-md-6 {
+  @include mq(md) {
+    margin-bottom: 32px;
+  }
+}
+.mb-sm-0 {
+  @include mq(sm) {
+    margin-bottom: 0;
+  }
+}
+.mb-sm-6 {
+  @include mq(sm) {
+    margin-bottom: 32px;
+  }
+}
+

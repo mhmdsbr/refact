@@ -44,7 +44,7 @@ h4,
 h5,
 h6 {
   font-family: $font-secondary;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .main {
@@ -57,3 +57,13 @@ h6 {
   border: 1px solid var(--color-grey-1);
 }
 
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}

@@ -15,7 +15,7 @@
     margin-right: auto;
     padding-top: 8px;
 
-    @include mq(md) {
+    @include mq(lg) {
       margin: unset;
     }
   }

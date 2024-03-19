@@ -60,42 +60,46 @@
   <header class="header o-section">
     <div class="o-section__wrapper">
       <div class="header__navbar row u-flex--center">
-        <a class="header__navbar-logo p-0 col-lg-2 col-md-3 col-4" href="#">
-          <img src="images/logo.svg" alt="" class="header__logo" />
+        <a class="header__navbar-logo p-0 col-lg-2 col-md-3 col-4" href="#" aria-label="Home">
+          <picture class="header__logo">
+            <source srcset="images/logo.svg" type="image/svg+xml">
+            <img src="images/logo.svg" alt="Logo" title="Logo" class="header__logo" aria-hidden="true" />
+          </picture>
+          <span class="sr-only">Home</span>
         </a>
-        <nav class="header__navbar-container p-0 col-lg-10 col-md-9 col-8">
-          <div class="header__navbar-hamburger-icon js-header-hamburger">
+        <nav class="header__navbar-container p-0 col-lg-10 col-sm-10 col-8">
+          <div class="header__navbar-hamburger-icon js-header-hamburger" aria-label="Toggle Navigation Menu">
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M34 28.3337H0V24.5559H34V28.3337ZM34 18.8892H0V15.1114H34V18.8892ZM34 5.66699V9.44477H0V5.66699H34Z" fill="white"/>
             </svg>
           </div>
           <ul class="header__navbar-nav">
-            <li class="header__nav--close-icon js-close-icon">
+            <li class="header__nav--close-icon js-close-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_72_608)">
-                <path d="M24 1.41269L22.6087 0.0244141L12 10.6128L1.39129 0.0244141L0 1.41269L10.6087 12.0012L0 22.5889L1.39129 23.9771L12 13.3894L22.6087 23.9771L24 22.5889L13.3905 12.0012L24 1.41269Z" fill="white"/>
+                  <path d="M24 1.41269L22.6087 0.0244141L12 10.6128L1.39129 0.0244141L0 1.41269L10.6087 12.0012L0 22.5889L1.39129 23.9771L12 13.3894L22.6087 23.9771L24 22.5889L13.3905 12.0012L24 1.41269Z" fill="white"/>
                 </g>
                 <defs>
-                <clipPath id="clip0_72_608">
-                <rect width="24" height="24" fill="white"/>
-                </clipPath>
+                  <clipPath id="clip0_72_608">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
                 </defs>
               </svg>
             </li>
             <li class="header__nav-item active">
-              <a class="nav-link" href="#">Why Us</a>
+              <a class="nav-link" href="#" aria-label="Why Us">Why Us</a>
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#" aria-label="Menu">Menu</a>
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="#">Popular Dishes</a>
+              <a class="nav-link" href="#" aria-label="Popular Dishes">Popular Dishes</a>
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="#">Book</a>
+              <a class="nav-link" href="#" aria-label="Book">Book</a>
             </li>
             <li class="header__nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#" aria-label="Contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -105,15 +109,22 @@
   <main class="main">
     <article class="c-hero">
       <div class="c-hero__background">
-        <img src="images/background-picture.jpg" srcset="" alt="" title="" loading="lazy" />
+          <div class="c-hero__background">
+            <picture>
+              <source srcset="images/background-picture-sm.jpg" media="(max-width: 575.98px)">
+              <source srcset="images/background-picture-md.jpg" media="(min-width: 576px) and (max-width: 991.98px)">
+              <source srcset="images/background-picture-lg.jpg" media="(min-width: 992px) and (max-width: 1199.98px)">
+              <img src="images/background-picture.jpg" alt="Picture of some people in a restaurant" title="Restaurant" loading="lazy" />
+            </picture>
+          </div>
       </div>
       <div class="c-hero__content row u-flex--center">
         <div class="col-lg-4 col-md-7 col-sm-10 u-flex--column">
           <h1 class="c-hero__title">Book a table in the best Mexican restaurant</h1>
           <p class="c-hero__paragraph">30% off for Christmas</p>
           <div class="c-hero__buttons u-flex--center">
-            <a class="btn btn--primary">Book Now</a>
-            <a class="btn btn--secondary">See Menu</a>
+            <a href="#" class="btn btn--secondary">Book Now</a>
+            <a href="#" class="btn btn--primary">See Menu</a>
           </div>
         </div>
       </div>
@@ -121,7 +132,7 @@
     <article class="c-why-us o-section">
       <div class="o-section__wrapper bg-primary">
         <div class="row u-flex--center row--mobile">
-          <div class="col-md-6 p-0 col-12">
+          <div class="col-lg-7 p-0 col-12">
             <div class="c-why-us__content">
               <h2 class="c-why-us__title">Why Customers Like us?</h2>
               <p class="c-why-us__paragraph">When we first opened our restaurant, it didn't take a long time ofr us to prove our difference.</p>
@@ -129,9 +140,11 @@
               <p class="c-why-us__paragraph">Today, we have customers not only from this area but also from other cities.</p>
             </div>
           </div>
-          <div class="col-md-6 p-0 col-12">
+          <div class="col-lg-5 p-0 col-12">
             <div class="c-why-us__image">
-              <img src="images/why-us.jpg" srcset="" alt="" title="" loading="lazy" />
+              <picture>
+                <img src="images/why-us.jpg" alt="Image of a chef cooking" title="Why us?" loading="lazy" />
+              </picture>
             </div>
           </div>
         </div>
@@ -145,7 +158,7 @@
               <div class="c-menu__header">
                 <h3 class="c-menu__title">Our Menu</h3>
                 <ul>
-                  <li class="c-menu__nav-item active" data-tab="starter" >Starter</li>
+                  <li class="c-menu__nav-item active" data-tab="starter">Starter</li>
                   <li class="c-menu__nav-item" data-tab="main-dishes">Main Dishes</li>
                   <li class="c-menu__nav-item" data-tab="desserts">Desserts</li>
                 </ul>

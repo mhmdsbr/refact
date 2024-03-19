@@ -19,25 +19,54 @@
 
   &__title {
     text-align: center;
-    font-size: map-get($text-sizes, 4xl);
+    font-size: calc(map-get($text-sizes, 4xl) - 1px);
     margin-bottom: 0;
     font-weight: 600;
 
-    @include mq(lg) {
-      font-size: map-get($text-sizes, 5xl);
+    @include mq(sm) {
+      font-size: calc(map-get($text-sizes, 5xl) + 4px);
     }
   }
 
   &__paragraph {
     text-align: center;
-    font-size: map-get($text-sizes, base);
+    font-size: map-get($text-sizes, 2xl);
     margin-bottom: 32px;
+
+    @include mq(lg) {
+      font-size: calc(map-get($text-sizes, 2xl) + 2px);
+    }
+
+    @include mq(sm, lg) {
+      font-size: calc(map-get($text-sizes, 2xl) + 4px);
+    }
   }
 
   &__buttons {
     display: flex;
-    gap: 32px;
-    font-size: map-get($text-sizes, xl);
+    gap: 16px;
+    flex-direction: column;
+    margin: auto 62px;
+
+    @include mq(md) {
+      flex-direction: row;
+      width: 100%;
+      gap: 32px;
+      margin: auto;
+    }
+
+    a {
+      padding: 14px 52px;
+      font-size: calc(map-get($text-sizes, 2xl));
+
+      @include mq(lg, wide) {
+        padding: 14px 28px;
+      }
+      @include mq(md, lg) {
+        padding: 14px 42px;
+        font-size: calc(map-get($text-sizes, 2xl) + 4px);
+      }
+    }
   }
 
   &__background {
