@@ -16,3 +16,54 @@
 .gap-1 {
   gap: 8px;
 }
+.m-auto {
+  margin: auto;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-lg-0 {
+  @include mq(lg) {
+    margin-bottom: 0;
+  }
+}
+.mb-md-0 {
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+}
+.mb-md-6 {
+  @include mq(md) {
+    margin-bottom: 32px;
+  }
+}
+.mb-sm-0 {
+  @include mq(sm) {
+    margin-bottom: 0;
+  }
+}
+.mb-sm-6 {
+  @include mq(sm) {
+    margin-bottom: 32px;
+  }
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-lg-0 {
+  @include mq(lg) {
+    margin-top: 0 !important;
+  }
+}
+
+.mt-6 {
+  margin-top: 32px;
+}
+
+.mt-md-6 {
+  @include mq(md) {
+    margin-top: 32px;
+  }
+}

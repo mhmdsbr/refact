@@ -13,22 +13,35 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 32px;
 
-    @include mq(md) {
+    @include mq(lg) {
       flex-direction: row;
+      margin-bottom: 0;
     }
 
     ul {
       list-style: none;
       display: flex;
-      gap: 32px;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
+      gap: 32px;
       padding: 0;
 
-      @include mq(md) {
+      @include mq(lg) {
         flex-direction: row;
+        gap: 64px;
+      }
+
+      @include mq(md, lg) {
+        flex-direction: row;
+        gap: 32px;
+      }
+
+      @include mq(sm, md) {
+        flex-direction: row;
+        gap: 48px;
       }
 
       li {
@@ -40,6 +53,18 @@
   &__title {
     @extend %section-title;
     margin: 32px 0;
+    font-size: calc(map-get($text-sizes, 4xl) - 2px);
+
+    @include mq(lg) {
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
+      text-align: center;
+    }
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
+      text-align: center;
+    }
+
   }
 
   &__nav-item {
@@ -80,11 +105,19 @@
 
   &__content-title {
     display: block;
-    font-size: map-get($text-sizes, xl);
+    font-size: calc(map-get($text-sizes, 2xl) + 2px);
     text-align: center;
     margin: 8px 0;
 
-    @include mq(md) {
+    @include mq(lg) {
+      font-size: map-get($text-sizes, 2xl);
+    }
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, 3xl) - 2px);
+    }
+
+    @include mq(sm) {
       text-align: left;
     }
   }
@@ -94,13 +127,23 @@
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    font-size: map-get($text-sizes, lg);
+    font-size: calc(map-get($text-sizes, 2xl) - 1px);
     text-align: center;
     color: var(--color-grey-2);
 
-    @include mq(md) {
+    @include mq(lg) {
+      font-size: map-get($text-sizes, lg);
+    }
+
+    @include mq(md, lg) {
+      font-size: map-get($text-sizes, 2xl);
+    }
+
+    @include mq(sm) {
       flex-direction: row;
       text-align: left;
+      margin-left: unset;
+      margin-right: unset;
     }
   }
 

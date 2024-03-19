@@ -6,7 +6,7 @@
     &--mobile {
       flex-direction: column;
 
-      @include mq(md) {
+      @include mq(lg) {
         flex-direction: row;
       }
     }

@@ -1,15 +1,26 @@
 .btn {
   text-align: center;
   font-size: map-get($text-sizes, lg);
-  padding: 10px 32px;
+  padding: 14px;
+  border-radius: 2px;
+  text-decoration: none;
+
 
   &--primary {
     background-color: var(--color-grey);
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 
   &--secondary {
     color: var(--color-white);
     background-color: var(--color-orange);
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 
 }
