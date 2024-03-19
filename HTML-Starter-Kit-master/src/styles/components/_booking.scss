@@ -31,20 +31,39 @@
   &__title {
     @extend %section-title;
     margin-bottom: 0;
+    text-align: center;
+    font-size: calc(map-get($text-sizes, 4xl) - 2px);
+
+    @include mq(lg) {
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
+      text-align: left;
+    }
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
+    }
   }
 
   &__paragraph {
     font-size: map-get($text-sizes, 2xl);
-    color: var(--color-grey-2);
+    color: var(--color-white);
     text-align: center;
-    width: 80%;
-    margin: 32px auto;
+    width: 88%;
+    margin: 64px auto;
+    padding-bottom: 32px;
 
-    @include mq(md) {
+    @include mq(lg) {
       font-size: map-get($text-sizes, xl);
       text-align: left;
       margin: 32px 0;
+      width: 60%;
     }
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, 2xl) + 2px);
+      width: 70%;
+    }
+
   }
 
   &__background {
@@ -63,13 +82,22 @@
 
   &__form {
     position: relative;
-    padding: 32px 64px 64px;
+    padding: 64px 22px;
+
+    @include mq(lg) {
+      padding: 64px;
+    }
+
+    @include mq(md, lg) {
+      padding: 64px 32px;
+    }
+
   }
 
   &__form-input-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 22px 0;
+    padding: 16px 0;
 
     label {
       margin-bottom: 16px;
@@ -146,6 +174,7 @@
     margin-top: 32px;
     cursor: pointer;
     border: none;
+    border-radius: 2px;
   }
 
   &__messages {

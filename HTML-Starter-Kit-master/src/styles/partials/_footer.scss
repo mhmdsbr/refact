@@ -3,6 +3,15 @@
   margin-bottom: 32px;
   color: var(--color-grey-2);
 
+  p {
+    font-size: map-get($text-sizes, lg);
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, xl));
+    }
+  }
+
+
   &--border {
     border-top: 1px solid var(--color-grey-6);
     padding-top: 32px;

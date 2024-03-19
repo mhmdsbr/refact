@@ -1,12 +1,14 @@
 .c-popular-dishes {
 
   &__container {
-    padding: 32px;
+    padding: 0;
 
     @include mq(lg) {
       padding: 64px 64px 98px 64px;
     }
-
+    @include mq(md, lg) {
+      padding: 32px;
+    }
     .carousel-cell {
       width: 100%;
       overflow: hidden;
@@ -19,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mq(md) {
+    @include mq(lg) {
       flex-direction: row;
     }
   }
@@ -28,13 +30,25 @@
     @extend %section-title;
     margin: 32px 0;
     flex: 10;
+    font-size: calc(map-get($text-sizes, 4xl) - 2px);
 
     @include mq(lg, wide) {
       flex: 7;
     }
+
+    @include mq(lg) {
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
+    }
+
     @include mq(md, lg) {
       flex: 5;
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
     }
+
+    @include mq(sm, md) {
+      text-align: center;
+    }
+
   }
 
   &__pagination {
@@ -61,9 +75,17 @@
   }
 
   &__item-title {
-    font-size: map-get($text-sizes, 3xl);
+    font-size: calc(map-get($text-sizes, 3xl) + 2px);
     margin: 22px 0 16px 0;
     text-align: center;
+
+    @include mq(lg) {
+      font-size: calc(map-get($text-sizes, 3xl) + 4px);
+    }
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, 3xl) + 6px);
+    }
 
     @include mq(md) {
       text-align: left;
@@ -71,10 +93,18 @@
   }
 
   &__item-desc {
-    font-size: map-get($text-sizes, xl);
+    font-size: map-get($text-sizes, 2xl);
     color: var(--color-grey-4);
     line-height: 1.5;
     text-align: center;
+
+    @include mq(lg) {
+      font-size: map-get($text-sizes, xl);
+    }
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, 2xl) + 2px);
+    }
 
     @include mq(md) {
       text-align: left;
@@ -83,8 +113,12 @@
   }
 
   &__item-price {
-    font-size: map-get($text-sizes, 3xl);
+    font-size: calc(map-get($text-sizes, 3xl) + 2px);
     text-align: center;
+
+    @include mq(lg) {
+      font-size: calc(map-get($text-sizes, 3xl));
+    }
 
     @include mq(md) {
       text-align: left;
@@ -117,5 +151,8 @@
     top: 6px;
   }
 
+  .flickity-page-dots {
+    display: none;
+  }
 }
 

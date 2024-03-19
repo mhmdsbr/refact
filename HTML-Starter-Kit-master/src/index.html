@@ -61,10 +61,7 @@
     <div class="o-section__wrapper">
       <div class="header__navbar row u-flex--center">
         <a class="header__navbar-logo p-0 col-lg-2 col-md-3 col-4" href="#" aria-label="Home">
-          <picture class="header__logo">
-            <source srcset="images/logo.svg" type="image/svg+xml">
-            <img src="images/logo.svg" alt="Logo" title="Logo" class="header__logo" aria-hidden="true" />
-          </picture>
+          <img src="images/logo.svg" alt="Logo" title="Logo" class="header__logo" aria-hidden="true" />
           <span class="sr-only">Home</span>
         </a>
         <nav class="header__navbar-container p-0 col-lg-10 col-sm-10 col-8">
@@ -119,7 +116,7 @@
           </div>
       </div>
       <div class="c-hero__content row u-flex--center">
-        <div class="col-lg-4 col-md-7 col-sm-10 u-flex--column">
+        <div class="col-lg-4 col-sm-10 u-flex--column">
           <h1 class="c-hero__title">Book a table in the best Mexican restaurant</h1>
           <p class="c-hero__paragraph">30% off for Christmas</p>
           <div class="c-hero__buttons u-flex--center">
@@ -128,8 +125,15 @@
           </div>
         </div>
       </div>
+      <div class="c-hero__btn-down">
+        <a href="#why-us">
+          <svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.2839 5.93606L23.4383 0.218059C23.1414 -0.0726864 22.665 -0.0726864 22.3681 0.218059C22.0712 0.508805 22.0712 0.975209 22.3681 1.26596L26.9209 5.72406H1.01452C0.593885 5.72406 0.253662 6.0572 0.253662 6.46909C0.253662 6.88098 0.593885 7.21413 1.01452 7.21413H26.9209L22.3681 11.6601C22.0712 11.9509 22.0712 12.4173 22.3681 12.708C22.5166 12.8534 22.7083 12.9261 22.9063 12.9261C23.1042 12.9261 23.296 12.8534 23.4445 12.708L29.2901 6.98395C29.5808 6.69927 29.5808 6.2268 29.2839 5.93606Z" fill="#FFFCFC"/>
+          </svg>
+        </a>
+      </div>
     </article>
-    <article class="c-why-us o-section">
+    <article id="why-us" class="c-why-us o-section">
       <div class="o-section__wrapper bg-primary">
         <div class="row u-flex--center row--mobile">
           <div class="col-lg-7 p-0 col-12">
@@ -151,7 +155,7 @@
       </div>
     </article>
     <article class="c-menu o-section">
-      <div class="o-section__wrapper bg-primary">
+      <div class="o-section__wrapper mt-0 mt-lg-0 mt-md-6 bg-primary">
         <div class="row u-flex--center">
           <div class="col-12">
             <div class="c-menu__container">
@@ -294,16 +298,21 @@
     <article class="c-booking o-section">
       <div class="o-section__wrapper px-md-2 p-0">
         <div class="c-booking__background">
-          <img src="images/booking.jpg" srcset="" alt="" title="" loading="lazy" />
+          <picture>
+            <source srcset="images/booking-sm.jpg" media="(max-width: 575.98px)">
+            <source srcset="images/booking-md.jpg" media="(min-width: 576px) and (max-width: 991.98px)">
+            <source srcset="images/booking-lg.jpg" media="(min-width: 992px) and (max-width: 1199.98px)">
+            <img src="images/booking.jpg" alt="Image of an empty dark restaurant" title="Book a Table" loading="lazy" />
+          </picture>
         </div>
         <div class="c-booking__container row u-flex--center">
-            <div class="col-12 col-lg-7 px-md-2 p-0">
+            <div class="col-12 col-lg-7 p-0">
               <div class="c-booking__content">
                 <h2 class="c-booking__title">Book a Table</h2>
                 <p class="c-booking__paragraph">When we first opened our restaurant, it didn't take a long time for us to prove our difference. </p>
               </div>
             </div>
-            <div class="col-12 p-0 col-lg-5">
+            <div class="col-12 col-md-10 p-0 col-lg-5 m-auto">
               <div class="c-booking__form-container bg-primary">
                 <form id="bookingForm" class="c-booking__form u-flex u-flex--column">
                   <div class="c-booking__form-input-wrapper">
@@ -368,7 +377,7 @@
       </div>
     </article>
     <article class="c-contact o-section">
-      <div class="o-section__wrapper p-0 px-md-2">
+      <div class="o-section__wrapper p-0">
         <div class="row">
           <div class="col-12 p-0">
             <div class="c-contact__container">
@@ -377,7 +386,7 @@
               </div>
               <div class="c-contact__content">
                 <div class="row c-contact__contact-items">
-                  <p class="col-4 c-contact__contact-item">
+                  <p class="col-lg-4 col-6 c-contact__contact-item">
                     <span>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24.3285 21.1687C23.2831 20.1365 21.9779 20.1365 20.9392 21.1687C20.1467 21.9544 19.3543 22.7402 18.5752 23.5392C18.3622 23.759 18.1824 23.8056 17.9227 23.6591C17.4099 23.3794 16.8639 23.153 16.3712 22.8467C14.0738 21.4017 12.1494 19.5439 10.4447 17.453C9.59905 16.4142 8.8466 15.3022 8.32054 14.0503C8.214 13.7973 8.23398 13.6308 8.4404 13.4244C9.23281 12.6586 10.0052 11.8728 10.7843 11.0871C11.8697 9.99503 11.8697 8.71652 10.7777 7.6178C10.1584 6.99186 9.53912 6.37924 8.91984 5.75331C8.28059 5.11405 7.64799 4.46814 7.00208 3.83554C5.95663 2.81673 4.65149 2.81673 3.6127 3.8422C2.81363 4.62795 2.04786 5.43368 1.23548 6.20611C0.483021 6.91861 0.103463 7.79093 0.0235567 8.80974C-0.102962 10.4678 0.30323 12.0326 0.875896 13.5575C2.04786 16.7139 3.83245 19.5173 5.99659 22.0876C8.91984 25.5635 12.4091 28.3137 16.491 30.298C18.3289 31.1903 20.2333 31.8762 22.3042 31.9894C23.7292 32.0693 24.9678 31.7097 25.96 30.5977C26.6392 29.8385 27.4049 29.146 28.1241 28.4202C29.1895 27.3415 29.1962 26.0363 28.1374 24.9709C26.8722 23.699 25.6004 22.4338 24.3285 21.1687Z" fill="white"/>
@@ -387,7 +396,7 @@
                     </span>
                     (212) 574-4682
                   </p>
-                  <p class="col-4 c-contact__contact-item">
+                  <p class="col-lg-4 col-6 c-contact__contact-item">
                     <span>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 0C9.60964 0 4.41077 5.19887 4.41077 11.5891C4.41077 19.5196 14.782 31.1621 15.2235 31.6538C15.6383 32.1157 16.3624 32.1149 16.7764 31.6538C17.218 31.1621 27.5891 19.5196 27.5891 11.5891C27.589 5.19887 22.3902 0 16 0ZM16 17.4199C12.7848 17.4199 10.1692 14.8042 10.1692 11.5891C10.1692 8.374 12.7849 5.75837 16 5.75837C19.215 5.75837 21.8306 8.37406 21.8306 11.5892C21.8306 14.8043 19.215 17.4199 16 17.4199Z" fill="white"/>
@@ -395,7 +404,7 @@
                     </span>
                     219 W 43rd St, NY 10036
                   </p>
-                  <p class="col-4 c-contact__contact-item">
+                  <p class="col-lg-4 col-6 c-contact__contact-item">
                     <span>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_32_185)">
@@ -409,12 +418,14 @@
               </div>
               <div class="row c-contact__map">
                 <div class="col-12 p-0">
-                  <img src="images/map.svg" alt="map" />
+                  <picture>
+                    <img src="images/map.jpg" alt="Static map that is showing a location" title="Map" loading="lazy" />
+                  </picture>
                 </div>
               </div>
               <div class="row c-contact__hours">
                 <div class="col-12 p-0">
-                  <h5>Open Hours</h5>
+                  <p>Open Hours</p>
                   <p>Every Day 8am-12am</p>
                 </div>
               </div>

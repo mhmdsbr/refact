@@ -12,22 +12,32 @@
   &__title {
     @extend %section-title;
     margin-left: 0;
+    text-align: center;
+    font-size: calc(map-get($text-sizes, 4xl) - 2px);
 
     @include mq(lg) {
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
+      text-align: left;
       margin-left: 64px;
     }
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
+    }
+
   }
 
   &__contact-items {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
-    @include mq(md) {
+    @include mq(lg) {
       flex-direction: row;
       text-align: left;
       align-items: flex-end;
+      margin-bottom: 32px;
     }
   }
 
@@ -37,9 +47,14 @@
     align-items: center;
     gap: 18px;
     padding: 0;
+    font-size: calc(map-get($text-sizes, 2xl));
 
-    @include mq(md) {
+    @include mq(lg) {
       flex-direction: row;
+    }
+
+    @include mq(md, lg) {
+      font-size: calc(map-get($text-sizes, 2xl) + 2px);
     }
 
   }
@@ -50,8 +65,9 @@
       height: 480px;
       object-fit: cover;
       display: block;
-      @include mq(sm) {
+      @include mq(lg) {
         height: 100%;
+        border: 1px solid;
       }
     }
   }
@@ -59,14 +75,28 @@
   &__hours {
     text-align: center;
     margin-top: 32px;
-    h5 {
+
+    p:nth-child(1) {
       text-transform: uppercase;
-      font-size: map-get($text-sizes, lg);
+      font-size: map-get($text-sizes, 2xl);
       color: var(--color-orange);
       margin-bottom: 0;
+
+      @include mq(lg) {
+        font-size: map-get($text-sizes, xl);
+      }
+
+      @include mq(md, lg) {
+        font-size: calc(map-get($text-sizes, 2xl) + 2px);
+      }
+
     }
     p {
-      font-size: map-get($text-sizes, xl);
+      font-size: calc(map-get($text-sizes, 3xl) - 2px);
+
+      @include mq(md, lg) {
+        font-size: calc(map-get($text-sizes, 3xl) + 2px);
+      }
     }
   }
 

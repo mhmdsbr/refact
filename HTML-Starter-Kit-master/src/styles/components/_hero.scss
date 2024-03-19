@@ -4,16 +4,16 @@
   min-height: 500px;
 
   @include mq(sm) {
-    min-height: 800px;
+    min-height: 850px;
   }
 
   &__content {
     position: absolute;
     inset: 0;
-    transform: translateY(30%);
+    transform: translateY(35%);
 
     @include mq(sm) {
-      transform: translateY(40%);
+      //transform: translateY(40%);
     }
   }
 
@@ -39,6 +39,7 @@
 
     @include mq(sm, lg) {
       font-size: calc(map-get($text-sizes, 2xl) + 4px);
+      margin-bottom: 84px;
     }
   }
 
@@ -46,7 +47,7 @@
     display: flex;
     gap: 16px;
     flex-direction: column;
-    margin: auto 62px;
+    margin: auto 64px;
 
     @include mq(md) {
       flex-direction: row;
@@ -56,14 +57,14 @@
     }
 
     a {
-      padding: 14px 52px;
+      padding: 14px 48px;
       font-size: calc(map-get($text-sizes, 2xl));
 
       @include mq(lg, wide) {
         padding: 14px 28px;
       }
       @include mq(md, lg) {
-        padding: 14px 42px;
+        padding: 14px 64px;
         font-size: calc(map-get($text-sizes, 2xl) + 4px);
       }
     }
@@ -80,6 +81,24 @@
       object-fit: cover;
       object-position: center center;
       pointer-events: none;
+    }
+  }
+
+  &__btn-down {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,.8);
+    border-radius: 60%;
+
+    @include mq(md, lg) {
+      display: block;
+    }
+    svg {
+      transform: rotate(90deg);
+      padding: 20px 16px;
     }
   }
 }

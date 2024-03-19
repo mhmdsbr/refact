@@ -55,15 +55,16 @@
     margin: 32px 0;
     font-size: calc(map-get($text-sizes, 4xl) - 2px);
 
+    @include mq(lg) {
+      font-size: calc(map-get($text-sizes, 4xl) + 4px);
+      text-align: center;
+    }
+
     @include mq(md, lg) {
       font-size: calc(map-get($text-sizes, 4xl) + 4px);
       text-align: center;
     }
 
-    @include mq(sm, md) {
-      font-size: calc(map-get($text-sizes, 4xl) + 4px);
-      text-align: center;
-    }
   }
 
   &__nav-item {

@@ -16,7 +16,9 @@
 .gap-1 {
   gap: 8px;
 }
-
+.m-auto {
+  margin: auto;
+}
 .mb-0 {
   margin-bottom: 0;
 }
@@ -46,3 +48,22 @@
   }
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-lg-0 {
+  @include mq(lg) {
+    margin-top: 0 !important;
+  }
+}
+
+.mt-6 {
+  margin-top: 32px;
+}
+
+.mt-md-6 {
+  @include mq(md) {
+    margin-top: 32px;
+  }
+}
