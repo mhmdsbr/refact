@@ -5,7 +5,7 @@
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 400;
-  src: url('../../fonts/catamaran/Catamaran-Regular.ttf') format('woff2');
+  src: url('../../fonts/catamaran/Catamaran-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 500;
-  src: url('../../fonts/catamaran/Catamaran-Medium.ttf') format('woff2');
+  src: url('../../fonts/catamaran/Catamaran-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-family: 'Catamaran';
   font-style: normal;
   font-weight: 600;
-  src: url('../../fonts/catamaran/Catamaran-Bold.ttf') format('woff2');
+  src: url('../../fonts/catamaran/Catamaran-Bold.woff2') format('woff2');
 }
 
 
@@ -30,7 +30,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('../../fonts/roboto_Slab/RobotoSlab-Regular.ttf') format('woff2');
+  src: url('../../fonts/roboto_Slab/Roboto-Slab-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -46,7 +46,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  src: url('../../fonts/roboto_Slab/RobotoSlab-Bold.ttf') format('woff2');
+  src: url('../../fonts/roboto_Slab/Roboto-Slab-Bold.woff2') format('woff2');
 }
 
 $font-fallback: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen-sans, ubuntu, cantarell, 'Helvetica Neue', sans-serif;

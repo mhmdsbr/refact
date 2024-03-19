@@ -14,7 +14,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
+  <meta name="description" content="A web page to order food from restaurant">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Starter Kit</title>
 
@@ -27,6 +27,8 @@
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="application-name" content="MarkItAsDone">
+
+
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -108,9 +110,10 @@
       <div class="c-hero__background">
           <div class="c-hero__background">
             <picture>
-              <source srcset="images/background-picture-sm.jpg" media="(max-width: 575.98px)">
-              <source srcset="images/background-picture-md.jpg" media="(min-width: 576px) and (max-width: 991.98px)">
-              <source srcset="images/background-picture-lg.jpg" media="(min-width: 992px) and (max-width: 1199.98px)">
+              <source srcset="images/background-picture-sm.webp" media="(max-width: 575.98px)">
+              <source srcset="images/background-picture-md.webp" media="(min-width: 576px) and (max-width: 991.98px)">
+              <source srcset="images/background-picture-lg.webp" media="(min-width: 992px) and (max-width: 1199.98px)">
+              <source srcset="images/background-picture.webp" media="(min-width: 1200px)">
               <img src="images/background-picture.jpg" alt="Picture of some people in a restaurant" title="Restaurant" loading="lazy" />
             </picture>
           </div>
@@ -147,6 +150,7 @@
           <div class="col-lg-5 p-0 col-12">
             <div class="c-why-us__image">
               <picture>
+                <source srcset="images/why-us.webp" media="(min-width: 360px)">
                 <img src="images/why-us.jpg" alt="Image of a chef cooking" title="Why us?" loading="lazy" />
               </picture>
             </div>
@@ -230,13 +234,13 @@
               <div class="c-popular-dishes__header">
                 <h3 class="c-popular-dishes__title">The Most Popular Dishes</h3>
                 <div class="c-popular-dishes__slide-nav">
-                  <button class="c-popular-dishes__slide-prev-button">
+                  <button type="button" name="button" class="c-popular-dishes__slide-prev-button" aria-label="Previous Slide">
                     <svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M29.2839 5.93606L23.4383 0.218059C23.1414 -0.0726864 22.665 -0.0726864 22.3681 0.218059C22.0712 0.508805 22.0712 0.975209 22.3681 1.26596L26.9209 5.72406H1.01452C0.593885 5.72406 0.253662 6.0572 0.253662 6.46909C0.253662 6.88098 0.593885 7.21413 1.01452 7.21413H26.9209L22.3681 11.6601C22.0712 11.9509 22.0712 12.4173 22.3681 12.708C22.5166 12.8534 22.7083 12.9261 22.9063 12.9261C23.1042 12.9261 23.296 12.8534 23.4445 12.708L29.2901 6.98395C29.5808 6.69927 29.5808 6.2268 29.2839 5.93606Z" fill="#FFFCFC"/>
                     </svg>
                   </button>
                   <p class="c-popular-dishes__pagination js-carousel-status"></p>
-                  <button class="c-popular-dishes__slide-next-button">
+                  <button type="button" name="button" class="c-popular-dishes__slide-next-button" aria-label="Next Slide">
                     <svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M29.2839 5.93606L23.4383 0.218059C23.1414 -0.0726864 22.665 -0.0726864 22.3681 0.218059C22.0712 0.508805 22.0712 0.975209 22.3681 1.26596L26.9209 5.72406H1.01452C0.593885 5.72406 0.253662 6.0572 0.253662 6.46909C0.253662 6.88098 0.593885 7.21413 1.01452 7.21413H26.9209L22.3681 11.6601C22.0712 11.9509 22.0712 12.4173 22.3681 12.708C22.5166 12.8534 22.7083 12.9261 22.9063 12.9261C23.1042 12.9261 23.296 12.8534 23.4445 12.708L29.2901 6.98395C29.5808 6.69927 29.5808 6.2268 29.2839 5.93606Z" fill="#FFFCFC"/>
                     </svg>
@@ -246,7 +250,10 @@
               <div class="main-carousel" data-flickity='{ "freeScroll": true }' >
                 <div class="row u-flex--align-center row--mobile carousel-cell">
                   <div class="col-lg-7 p-0">
-                    <img class="c-popular-dishes__item-img" src="images/popular-dish.jpg" alt="" />
+                    <picture>
+                      <source srcset="images/popular-dish.webp" type="image/webp" media="(min-width: 360px)">
+                      <img class="c-popular-dishes__item-img" src="images/popular-dish.jpg" title="popular dish" alt="Delicious food dish" />
+                    </picture>
                   </div>
                   <div class="col-12 col-lg-5 p-0 pl-lg-6">
                     <h4 class="c-popular-dishes__item-title">Sweet and sour pork</h4>
@@ -261,7 +268,10 @@
                 </div>
                 <div class="row u-flex--align-center row--mobile carousel-cell">
                   <div class="col-lg-7 p-0">
-                    <img class="c-popular-dishes__item-img" src="images/popular-dish.jpg" alt="" />
+                    <picture>
+                      <source srcset="images/popular-dish.webp" type="image/webp" media="(min-width: 360px)">
+                      <img class="c-popular-dishes__item-img" src="images/popular-dish.jpg" title="popular dish" alt="Delicious food dish" />
+                    </picture>
                   </div>
                   <div class="col-12 col-lg-5 p-0 pl-lg-6">
                     <h4 class="c-popular-dishes__item-title">Sweet and sour pork</h4>
@@ -276,7 +286,10 @@
                 </div>
                 <div class="row u-flex--align-center row--mobile carousel-cell">
                   <div class="col-lg-7 p-0">
-                    <img class="c-popular-dishes__item-img" src="images/popular-dish.jpg" alt="" />
+                    <picture>
+                      <source srcset="images/popular-dish.webp" type="image/webp" media="(min-width: 360px)">
+                      <img class="c-popular-dishes__item-img" src="images/popular-dish.jpg" title="popular dish" alt="Delicious food dish" />
+                    </picture>
                   </div>
                   <div class="col-12 col-lg-5 p-0 pl-lg-6">
                     <h4 class="c-popular-dishes__item-title">Sweet and sour pork</h4>
@@ -299,9 +312,10 @@
       <div class="o-section__wrapper px-md-2 p-0">
         <div class="c-booking__background">
           <picture>
-            <source srcset="images/booking-sm.jpg" media="(max-width: 575.98px)">
-            <source srcset="images/booking-md.jpg" media="(min-width: 576px) and (max-width: 991.98px)">
-            <source srcset="images/booking-lg.jpg" media="(min-width: 992px) and (max-width: 1199.98px)">
+            <source srcset="images/booking-lg.webp" media="(max-width: 575.98px)">
+            <source srcset="images/booking-lg.webp" media="(min-width: 576px) and (max-width: 991.98px)">
+            <source srcset="images/booking-lg.webp" media="(min-width: 992px) and (max-width: 1199.98px)">
+            <source srcset="images/booking.webp" media="(min-width: 1200px)">
             <img src="images/booking.jpg" alt="Image of an empty dark restaurant" title="Book a Table" loading="lazy" />
           </picture>
         </div>
@@ -351,7 +365,7 @@
                       </span>
                     </div>
                   </div>
-                  <button class="btn btn--secondary c-booking__form-btn" type="submit">Book Now</button>
+                  <button name="Book a table" class="btn btn--secondary c-booking__form-btn" type="submit">Book Now</button>
                 </form>
                 <div class="c-booking__messages">
                   <div class="c-booking__success-message p-0">
@@ -419,6 +433,7 @@
               <div class="row c-contact__map">
                 <div class="col-12 p-0">
                   <picture>
+                    <source srcset="images/map.webp" type="image/webp" media="(min-width: 360px)">
                     <img src="images/map.jpg" alt="Static map that is showing a location" title="Map" loading="lazy" />
                   </picture>
                 </div>
