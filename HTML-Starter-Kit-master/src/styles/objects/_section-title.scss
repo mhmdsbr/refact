@@ -1,6 +1,7 @@
 %section-title {
   font-size: map-get($text-sizes, 4xl);
   text-align: center;
+  cursor: default;
 
   @include mq(md) {
     text-align: left;
@@ -11,12 +12,17 @@
     display: block;
     border-bottom: 4px solid var(--color-orange);
     width: 38px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-top: 8px;
+    transition: width 0.3s ease;
 
     @include mq(lg) {
       margin: unset;
     }
   }
+
+  &:hover::after {
+    width: 100px;
+  }
 }
+
