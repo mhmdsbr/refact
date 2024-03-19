@@ -12,12 +12,11 @@
     margin-bottom: 32px;
     font-size: calc(map-get($text-sizes, 4xl) - 2px);
 
-    @include mq(md, lg) {
+    @include mq(lg) {
       font-size: calc(map-get($text-sizes, 4xl) + 4px);
-      text-align: center;
     }
 
-    @include mq(sm, md) {
+    @include mq(sm, lg) {
       font-size: calc(map-get($text-sizes, 4xl) + 4px);
       text-align: center;
     }
