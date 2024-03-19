@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f75292a-b731-4a41-9a17-41c446cf8d0b" name="Changes" comment="Fix: acf-json added">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_why-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_why-us.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/utilities/_spacers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/utilities/_spacers.scss" afterDir="false" />
+    <list default="true" id="4f75292a-b731-4a41-9a17-41c446cf8d0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/background-picture-lg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/background-picture-lg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/background-picture-md.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/background-picture-md.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/background-picture-sm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/background-picture-sm.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/background-picture.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/booking-lg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/booking-lg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/booking-md.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/booking-md.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/booking-sm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/booking-sm.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/booking.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/map.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/popular-dish.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter-theme/assets/images/why-us.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-theme/assets/images/background-picture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/starter-theme/assets/images/background-picture.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-theme/assets/images/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-theme/assets/images/popular-dish.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/starter-theme/assets/images/popular-dish.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-theme/assets/images/why-us.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/starter-theme/assets/images/why-us.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-theme/assets/styles/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/starter-theme/assets/styles/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/starter-theme/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter-theme/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/starter-theme/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +41,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/starter-theme/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/starter-theme/assets" />
+      <recent name="$PROJECT_DIR$/starter-theme/assets/styles" />
+      <recent name="$PROJECT_DIR$/HTML-Starter-Kit-master/dist/styles" />
+      <recent name="$PROJECT_DIR$/starter-theme/assets/scripts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
@@ -29,6 +59,29 @@
     </configuration>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Fix: small responsive fix">
+      <created>1710880485945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710880485945</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix: small responsive fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: small responsive fix" />
   </component>
 </project>
