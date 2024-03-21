@@ -4,41 +4,45 @@
   min-height: 500px;
 
   @include mq(sm) {
-    min-height: 850px;
+    min-height: 900px;
   }
 
   &__content {
     position: absolute;
     inset: 0;
-    transform: translateY(35%);
+    transform: translateY(25%);
 
-    @include mq(sm) {
-      //transform: translateY(40%);
+    @include mq(lg) {
+      transform: translateY(40%);
     }
+    @include mq(md, lg) {
+      transform: translateY(30%);
+    }
+
   }
 
   &__title {
+    @include px-to-rem(font-size ,calc(map-get($text-sizes, 4xl) - 1px));
     text-align: center;
-    font-size: calc(map-get($text-sizes, 4xl) - 1px);
     margin-bottom: 0;
     font-weight: 600;
 
     @include mq(sm) {
-      font-size: calc(map-get($text-sizes, 5xl) + 4px);
+      @include px-to-rem(font-size ,calc(map-get($text-sizes, 5xl) + 4px));
     }
   }
 
   &__paragraph {
     text-align: center;
-    font-size: map-get($text-sizes, 2xl);
+    @include px-to-rem(font-size ,calc(map-get($text-sizes, 2xl)));
     margin-bottom: 32px;
 
     @include mq(lg) {
-      font-size: calc(map-get($text-sizes, 2xl) + 2px);
+      @include px-to-rem(font-size ,calc(map-get($text-sizes, 2xl) + 2px));
     }
 
     @include mq(sm, lg) {
-      font-size: calc(map-get($text-sizes, 2xl) + 4px);
+      @include px-to-rem(font-size ,calc(map-get($text-sizes, 2xl) + 4px));
       margin-bottom: 84px;
     }
   }
@@ -58,14 +62,14 @@
 
     a {
       padding: 14px 48px;
-      font-size: calc(map-get($text-sizes, 2xl));
+      @include px-to-rem(font-size ,calc(map-get($text-sizes, 2xl)));
 
       @include mq(lg, wide) {
         padding: 14px 28px;
       }
       @include mq(md, lg) {
         padding: 14px 64px;
-        font-size: calc(map-get($text-sizes, 2xl) + 4px);
+        @include px-to-rem(font-size ,calc(map-get($text-sizes, 2xl)) + 4px);
       }
     }
   }
@@ -88,7 +92,7 @@
     display: none;
     position: absolute;
     left: 50%;
-    top: 85%;
+    top: 80%;
     transform: translateX(-50%);
     background-color: rgba(0,0,0,.8);
     border-radius: 60%;

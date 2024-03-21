@@ -1,0 +1,7 @@
+@mixin px-to-rem($property, $values...) {
+  $rem-values: ();
+  @each $value in $values {
+    $rem-values: append($rem-values, $value / $global-font-size * 1rem, comma);
+  }
+  #{$property}: $rem-values;
+}
