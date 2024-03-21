@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f75292a-b731-4a41-9a17-41c446cf8d0b" name="Changes" comment="Fix: acf-json added">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4f75292a-b731-4a41-9a17-41c446cf8d0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/elements/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-lg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-lg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-lg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-md.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-md.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-md.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-sm.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-sm.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-lg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-lg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-lg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-md.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-md.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-md.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-sm.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-sm.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/map.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/map.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/map.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/map.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_why-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_why-us.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_booking.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_booking.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/objects/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/objects/_section.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/settings/_settings.global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/settings/_settings.global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/utilities/_spacers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/utilities/_spacers.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,13 +35,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/starter-theme/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2e00yAGw4xM6dp02XIoaaxctq9V" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -28,7 +67,11 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

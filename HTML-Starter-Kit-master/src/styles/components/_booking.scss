@@ -125,6 +125,8 @@
   }
 
   &__form-input {
+    width: 100%;
+    box-sizing: border-box;
     background-color: var(--color-grey-5);
     appearance: none;
     outline: none;
