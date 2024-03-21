@@ -1,34 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f75292a-b731-4a41-9a17-41c446cf8d0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/elements/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-lg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-lg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-lg.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-md.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-md.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-md.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-sm.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture-sm.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/background-picture.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-lg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-lg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-lg.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-md.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-md.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-md.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-sm.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking-sm.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/booking.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/map.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/map.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/map.webp" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/images/map.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/index.html" afterDir="false" />
+    <list default="true" id="4f75292a-b731-4a41-9a17-41c446cf8d0b" name="Changes" comment="Fix: some minor fix on real mobile devices - px to rem mixin added - image quality fix on mobile">
       <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_booking.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_booking.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/components/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/objects/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/objects/_section.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/settings/_settings.global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/settings/_settings.global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/utilities/_spacers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML-Starter-Kit-master/src/styles/utilities/_spacers.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +43,32 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Fix: some minor fix on real mobile devices - px to rem mixin added - image quality fix on mobile">
+      <created>1711032434981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711032434981</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix: some minor fix on real mobile devices - px to rem mixin added - image quality fix on mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: some minor fix on real mobile devices - px to rem mixin added - image quality fix on mobile" />
   </component>
 </project>
