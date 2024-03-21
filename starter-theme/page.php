@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<main class="main">
-		<article class="c-hero">
+		<article id="hero" class="c-hero">
 			<div class="c-hero__background">
 				<div class="c-hero__background">
 					<picture>
@@ -46,7 +46,7 @@ get_header();
 				</a>
 			</div>
 		</article>
-		<article id="why-us" class="c-why-us o-section">
+		<article id="why-us" class="c-why-us o-section pt-0 pt-sm-10">
 			<div class="o-section__wrapper bg-primary">
 				<div class="row u-flex--center row--mobile">
 					<div class="col-lg-7 p-0 col-12">
@@ -68,7 +68,7 @@ get_header();
 				</div>
 			</div>
 		</article>
-		<article class="c-menu o-section">
+		<article id="menu" class="c-menu o-section">
 			<div class="o-section__wrapper mt-0 mt-lg-0 mt-md-6 bg-primary">
 				<div class="row u-flex--center">
 					<div class="col-12">
@@ -127,7 +127,7 @@ get_header();
 				</div>
 			</div>
 		</article>
-		<article class="c-popular-dishes o-section">
+		<article id="popular" class="c-popular-dishes o-section">
 			<div class="o-section__wrapper bg-primary">
 				<div class="row u-flex--center">
 					<div class="col-12">
@@ -192,7 +192,7 @@ get_header();
 				</div>
 			</div>
 		</article>
-		<article class="c-booking o-section">
+		<article id="booking" class="c-booking o-section">
 			<div class="o-section__wrapper px-md-2 p-0">
 				<div class="c-booking__background">
 					<picture>
@@ -274,7 +274,7 @@ get_header();
 				</div>
 			</div>
 		</article>
-		<article class="c-contact o-section">
+		<article id="contact" class="c-contact o-section">
 			<div class="o-section__wrapper p-0">
 				<div class="row">
 					<div class="col-12 p-0">
@@ -284,7 +284,7 @@ get_header();
 							</div>
 							<div class="c-contact__content">
 								<div class="row c-contact__contact-items">
-									<p class="col-lg-4 col-6 c-contact__contact-item">
+									<p class="col-lg-3 col-6 c-contact__contact-item">
 										<span>
 										  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M24.3285 21.1687C23.2831 20.1365 21.9779 20.1365 20.9392 21.1687C20.1467 21.9544 19.3543 22.7402 18.5752 23.5392C18.3622 23.759 18.1824 23.8056 17.9227 23.6591C17.4099 23.3794 16.8639 23.153 16.3712 22.8467C14.0738 21.4017 12.1494 19.5439 10.4447 17.453C9.59905 16.4142 8.8466 15.3022 8.32054 14.0503C8.214 13.7973 8.23398 13.6308 8.4404 13.4244C9.23281 12.6586 10.0052 11.8728 10.7843 11.0871C11.8697 9.99503 11.8697 8.71652 10.7777 7.6178C10.1584 6.99186 9.53912 6.37924 8.91984 5.75331C8.28059 5.11405 7.64799 4.46814 7.00208 3.83554C5.95663 2.81673 4.65149 2.81673 3.6127 3.8422C2.81363 4.62795 2.04786 5.43368 1.23548 6.20611C0.483021 6.91861 0.103463 7.79093 0.0235567 8.80974C-0.102962 10.4678 0.30323 12.0326 0.875896 13.5575C2.04786 16.7139 3.83245 19.5173 5.99659 22.0876C8.91984 25.5635 12.4091 28.3137 16.491 30.298C18.3289 31.1903 20.2333 31.8762 22.3042 31.9894C23.7292 32.0693 24.9678 31.7097 25.96 30.5977C26.6392 29.8385 27.4049 29.146 28.1241 28.4202C29.1895 27.3415 29.1962 26.0363 28.1374 24.9709C26.8722 23.699 25.6004 22.4338 24.3285 21.1687Z" fill="white"/>

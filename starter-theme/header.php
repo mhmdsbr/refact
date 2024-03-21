@@ -49,19 +49,19 @@
 							</svg>
 						</li>
 						<li class="header__nav-item active">
-							<a class="nav-link" href="#" aria-label="Why Us">Why Us</a>
+							<a class="nav-link" href="#why-us" aria-label="Why Us">Why Us</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="nav-link" href="#" aria-label="Menu">Menu</a>
+							<a class="nav-link" href="#menu" aria-label="Menu">Menu</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="nav-link" href="#" aria-label="Popular Dishes">Popular Dishes</a>
+							<a class="nav-link" href="#popular" aria-label="Popular Dishes">Popular Dishes</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="nav-link" href="#" aria-label="Book">Book</a>
+							<a class="nav-link" href="#booking" aria-label="Book">Book</a>
 						</li>
 						<li class="header__nav-item">
-							<a class="nav-link" href="#" aria-label="Contact">Contact</a>
+							<a class="nav-link" href="#contact" aria-label="Contact">Contact</a>
 						</li>
 					</ul>
 				</nav>
