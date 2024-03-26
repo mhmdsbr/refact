@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f75292a-b731-4a41-9a17-41c446cf8d0b" name="Changes" comment="Merge static to develop">
-      <change beforePath="$PROJECT_DIR$/starter-theme/assets/styles/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/starter-theme/assets/styles/style.min.css" afterDir="false" />
+    <list default="true" id="4f75292a-b731-4a41-9a17-41c446cf8d0b" name="Changes" comment="Add .gitignore to root directory">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,14 +17,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/HTML-Starter-Kit-master/dist/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/starter-theme/composer.json" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Merge static to develop">
@@ -33,7 +28,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711034953288</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add .gitignore to root directory">
+      <created>1711484555976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711484555976</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -49,6 +51,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge static to develop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge static to develop" />
+    <MESSAGE value="Add .gitignore to root directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .gitignore to root directory" />
   </component>
 </project>
